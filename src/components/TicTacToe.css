@@ -1,0 +1,126 @@
+.tictactoe-container {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Left side: Game Board */
+  .game-section {
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .game-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .board {
+    display: grid;
+    gap: 5px;
+  }
+  
+  .cell-button {
+    width: 100px;
+    height: 100px;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .symbol-img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .turn-info {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  .inline-symbol {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+  }
+  
+  .replay-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Popup Overlay */
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Popup Box */
+  .popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .popup-buttons {
+    margin-top: 20px;
+  }
+  
+  .popup-buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .popup-buttons .play-again {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .popup-buttons .close {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  /* Right side: Hint Section */
+  .hint-section {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    overflow-y: auto;
+  }
+  
+  .hint-button {
+    padding: 10px;
+    font-size: 18px;
+    width: 100%;
+  }
+  
+  .hint-text {
+    margin-top: 20px;
+    font-size: 18px;
+  }  

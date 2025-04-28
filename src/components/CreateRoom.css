@@ -1,0 +1,87 @@
+/* Centering the container */
+.create-room-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f3f4f6;
+}
+
+/* Room Creation Box */
+.create-room-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* Heading */
+.create-room-box h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Input Field */
+.create-room-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.create-room-box input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 8px rgba(37, 99, 235, 0.3);
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+/* Create Button */
+.create-room-box button {
+    width: 100%;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 12px;
+}
+
+.create-room-box button:hover {
+    background: #1e40af;
+}
+
+/* Join Room Link */
+.create-room-box p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.create-room-box a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.create-room-box a:hover {
+    text-decoration: underline;
+    color: #1e40af;
+}

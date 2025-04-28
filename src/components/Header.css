@@ -1,0 +1,17 @@
+/* In Header.css or a global CSS file */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f2f2f2; /* your chosen background */
+    border-bottom: 1px solid #ccc;
+    z-index: 1000; /* ensure it stays on top */
+    padding: 1rem;
+  }  
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }

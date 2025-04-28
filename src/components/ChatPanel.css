@@ -1,0 +1,31 @@
+/* src/components/ChatPanel.css */
+
+.chat-panel {
+  display: flex;
+  flex:1;
+  flex-direction: column;
+  width: 100%;
+}
+
+  
+  .chat-messages {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: calc(100vh - 150px);
+    overflow-y: auto;
+  }
+  
+  .chat-input {
+    display: flex;
+    margin-top: 1rem;
+  }
+  
+  .chat-input input {
+    flex: 1;
+    padding: 0.5rem;
+  }
+  
+  .chat-input button {
+    padding: 0.5rem 1rem;
+  }  

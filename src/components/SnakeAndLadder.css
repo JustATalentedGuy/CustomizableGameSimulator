@@ -1,0 +1,120 @@
+.game-container {
+    flex: 1;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.game-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.turn-indicator {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.red-turn {
+    background-color: rgba(255, 0, 0, 0.2);
+    color: red;
+}
+
+.blue-turn {
+    background-color: rgba(0, 0, 255, 0.2);
+    color: blue;
+}
+
+.board-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.board-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.snake-line {
+    stroke: red;
+    stroke-width: 4;
+    stroke-dasharray: 5;
+    opacity: 0.8;
+}
+
+.ladder-line {
+    stroke: green;
+    stroke-width: 4;
+    stroke-dasharray: 8;
+    opacity: 0.8;
+}
+
+.board {
+    display: grid;
+    gap: 2px;
+    position: relative;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+.snake {
+    color: red;
+    font-size: 18px;
+}
+
+.ladder {
+    color: green;
+    font-size: 18px;
+}
+
+.roll-dice {
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.roll-dice:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+.roll-dice:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+.dice-result {
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+}
